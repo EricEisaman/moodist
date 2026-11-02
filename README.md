@@ -2,11 +2,11 @@
   <img src="/assets/banner.png" alt="Moodist Logo Banner" />
   <h2>Moodist 🌲</h2>
   <p>Ambient sounds for focus and calm.</p>
-  <a href="https://moodist.mvze.net">Visit <strong>Moodist</strong></a> | <a href="https://buymeacoffee.com/remvze">Buy Me a Coffee</a>
+  <a href="https://eeisaman.github.io/moodist">Visit <strong>Moodist</strong></a> | <a href="https://buymeacoffee.com/sirfizx">Buy Me a Coffee</a>
   <br/><br/>
   <div>
     <a href="https://gitviews.com/">
-      <img src="https://gitviews.com/repo/remvze/moodist.svg" alt="Repo Views" />
+      <img src="https://gitviews.com/repo/EricEisaman/moodist.svg" alt="Repo Views" />
     </a>
   </div>
 </div>
@@ -33,7 +33,7 @@
 docker run -d \
   --name moodist \
   -p 8080:8080 \
-  ghcr.io/remvze/moodist:latest
+  ghcr.io/EricEisaman/moodist:latest
 ```
 
 The open:
@@ -66,7 +66,7 @@ Please check [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 Please give a star if you liked this project.
 
-You can also [Buy Me a Coffee](https://buymeacoffee.com/remvze) to help me maintain Moodist.
+You can also [Buy Me a Coffee](https://buymeacoffee.com/sirfizx) to help me maintain Moodist.
 
 ## License
 

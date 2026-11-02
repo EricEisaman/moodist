@@ -44,7 +44,7 @@ export function Features() {
       label: 'Open-Source',
       link: {
         label: 'Source Code',
-        url: 'https://github.com/remvze/moodist',
+        url: 'https://github.com/EricEisaman/moodist',
       },
     },
     {
