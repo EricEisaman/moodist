@@ -4,6 +4,8 @@ import react from '@astrojs/react';
 import AstroPWA from '@vite-pwa/astro';
 
 export default defineConfig({
+  site: 'https://ericeisaman.github.io',
+  base: '/moodist/',
   fonts: [
     {
       cssVariable: '--font-inter',
@@ -46,16 +48,16 @@ export default defineConfig({
         ],
         name: 'Moodist',
         orientation: 'any',
-        scope: '/',
+        scope: '/moodist/',
         short_name: 'Moodist',
-        start_url: '/',
+        start_url: '/moodist/',
         theme_color: '#09090b',
       },
       registerType: 'prompt',
       workbox: {
         globPatterns: ['**/*'],
         maximumFileSizeToCacheInBytes: Number.MAX_SAFE_INTEGER,
-        navigateFallback: '/',
+        navigateFallback: '/moodist/',
       },
     }),
   ],
