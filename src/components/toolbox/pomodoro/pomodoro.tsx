@@ -34,7 +34,10 @@ export function Pomodoro({ onClose, open, show }: PomodoroProps) {
   const interval = useRef<ReturnType<typeof setInterval> | null>(null);
   const alarmVolume = useSettingsStore(state => state.alarmVolume);
 
-  const alarm = useSoundEffect('/sounds/alarm.mp3', alarmVolume);
+  const alarm = useSoundEffect(
+    `${import.meta.env.BASE_URL}sounds/alarm.mp3`,
+    alarmVolume,
+  );
 
   const defaultTimes = useMemo(
     () => ({

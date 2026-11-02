@@ -35,7 +35,10 @@ export function Flowmodoro({ onClose, open, show }: FlowmodoroProps) {
   const timer = selectedTab === 'break' ? breakSeconds : focusSeconds;
   const alarmVolume = useSettingsStore(state => state.alarmVolume);
 
-  const alarm = useSoundEffect('/sounds/alarm.mp3', alarmVolume);
+  const alarm = useSoundEffect(
+    `${import.meta.env.BASE_URL}sounds/alarm.mp3`,
+    alarmVolume,
+  );
 
   const defaultBreakPercentage = useMemo(() => ({ break: 20 }), []);
 

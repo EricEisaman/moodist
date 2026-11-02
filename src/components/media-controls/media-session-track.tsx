@@ -19,7 +19,9 @@ export function MediaSessionTrack() {
   const play = useSoundStore(state => state.play);
   const pause = useSoundStore(state => state.pause);
   const masterAudioSoundRef = useRef<HTMLAudioElement>(null);
-  const artworkURL = isDarkTheme ? '/logo-dark.png' : '/logo-light.png';
+  const artworkURL = isDarkTheme
+    ? `${import.meta.env.BASE_URL}logo-dark.png`
+    : `${import.meta.env.BASE_URL}logo-light.png`;
 
   useEffect(() => {
     if (!isBrowser || !isPlaying) return;
@@ -92,7 +94,7 @@ export function MediaSessionTrack() {
       id="media-session-track"
       loop
       ref={masterAudioSoundRef}
-      src="/sounds/silence.wav"
+      src={`${import.meta.env.BASE_URL}sounds/silence.wav`}
     />
   );
 }

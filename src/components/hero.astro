@@ -10,7 +10,7 @@ const count = soundCount();
 
 <div class="hero">
   <div aria-hidden="true" class="background">
-    <img alt="" src="/images/hero-background.webp" />
+    <img alt="" src={`${import.meta.env.BASE_URL}images/hero-background.webp`} />
   </div>
 
   <Container>
@@ -21,7 +21,7 @@ const count = soundCount();
           aria-hidden="true"
           class="logo"
           height={44}
-          src="/logo.svg"
+          src={`${import.meta.env.BASE_URL}logo.svg`}
           width={44}
         />
       </div>

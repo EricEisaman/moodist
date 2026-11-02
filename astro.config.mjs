@@ -42,7 +42,7 @@ export default defineConfig({
         icons: [
           ...[72, 128, 144, 152, 192, 256, 512].map(size => ({
             sizes: `${size}x${size}`,
-            src: `/assets/pwa/${size}.png`,
+            src: `/moodist/assets/pwa/${size}.png`,
             type: 'image/png',
           })),
         ],

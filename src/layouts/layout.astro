@@ -46,7 +46,7 @@ const description =
           ?.setAttribute('content', theme === 'dark' ? '#18181b' : '#fafafa');
       })();
     </script>
-    <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href={`${import.meta.env.BASE_URL}favicon.svg`} rel="icon" type="image/svg+xml" />
     <Font cssVariable="--font-inter" preload={[{ weight: 400 }]} />
     <Font cssVariable="--font-inter-tight" />
     <Font cssVariable="--font-fraunces" preload />

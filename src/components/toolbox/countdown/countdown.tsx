@@ -30,7 +30,10 @@ export function Countdown({ onClose, show }: CountdownProps) {
   const [isFormVisible, setIsFormVisible] = useState(true);
   const alarmVolume = useSettingsStore(state => state.alarmVolume);
 
-  const alarm = useSoundEffect('/sounds/alarm.mp3', alarmVolume);
+  const alarm = useSoundEffect(
+    `${import.meta.env.BASE_URL}sounds/alarm.mp3`,
+    alarmVolume,
+  );
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
